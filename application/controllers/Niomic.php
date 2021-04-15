@@ -72,5 +72,14 @@ class Niomic extends CI_Controller
 		}
 	}
 
+	public function delete($nis){
+		if($this->db->delete('tbl_pelajar',array('nis'=>$nis))) {
+			$this->session->set_flashdata("success","Berhasil Hapus Data");
+			echo "<script>window.location.href='".base_url()."Niomic"."';</script>";
+		}
+	}
+
+
+
 	
 }
