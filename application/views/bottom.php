@@ -31,6 +31,14 @@
       'autoWidth'   : false
     })
   })
+
+  $('.ubah_data').click(function(){
+    $('.nis').val($(this).attr('data-nis'));
+    $('.nama_siswa').val($(this).attr('data-nama_siswa'));
+    $('.kelas').val($(this).attr('data-kelas'));
+    $('.jurusan').val($(this).attr('data-jurusan'));
+    $('.email').val($(this).attr('data-email'));
+  });
 </script>
 </body>
 </html>
